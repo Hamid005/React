@@ -1,13 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Card from './components/Card'
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Card 
+      image="https://randomuser.me/portraits/men/22.jpg"
+      name="Mustafa"
+      joined="Joined in 2013" 
+      desc="Kristy is an art director living in New York."
+      noOfFriends="4"
+    />
+    
+    <Card 
+      image="https://randomuser.me/portraits/women/21.jpg"
+      name="Kiran"
+      joined="Joined in 2018" 
+      desc="Kristy is an art director living in Los Angeles."
+      noOfFriends="0"
+    />
+    
+
+    
   </React.StrictMode>
 );
 
